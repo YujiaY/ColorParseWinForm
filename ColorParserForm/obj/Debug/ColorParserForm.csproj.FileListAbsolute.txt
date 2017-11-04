@@ -1,0 +1,23 @@
+c:\users\surfer\documents\visual studio 2017\Projects\ColorParserForm\ColorParserForm\bin\Debug\ColorParserForm.exe.config
+c:\users\surfer\documents\visual studio 2017\Projects\ColorParserForm\ColorParserForm\bin\Debug\ColorParserForm.exe
+c:\users\surfer\documents\visual studio 2017\Projects\ColorParserForm\ColorParserForm\bin\Debug\ColorParserForm.pdb
+c:\users\surfer\documents\visual studio 2017\Projects\ColorParserForm\ColorParserForm\bin\Debug\Newtonsoft.Json.dll
+c:\users\surfer\documents\visual studio 2017\Projects\ColorParserForm\ColorParserForm\bin\Debug\Newtonsoft.Json.xml
+c:\users\surfer\documents\visual studio 2017\Projects\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.csprojResolveAssemblyReference.cache
+c:\users\surfer\documents\visual studio 2017\Projects\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.Form1.resources
+c:\users\surfer\documents\visual studio 2017\Projects\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.Properties.Resources.resources
+c:\users\surfer\documents\visual studio 2017\Projects\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.csproj.GenerateResource.Cache
+c:\users\surfer\documents\visual studio 2017\Projects\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.exe
+c:\users\surfer\documents\visual studio 2017\Projects\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.pdb
+E:\@@@2017 Dip of SD@@@\@Semester 2\@Dynamic Data Structures\s9\ColorParserForm\ColorParserForm\bin\Debug\ColorParserForm.exe.config
+E:\@@@2017 Dip of SD@@@\@Semester 2\@Dynamic Data Structures\s9\ColorParserForm\ColorParserForm\bin\Debug\ColorParserForm.exe
+E:\@@@2017 Dip of SD@@@\@Semester 2\@Dynamic Data Structures\s9\ColorParserForm\ColorParserForm\bin\Debug\ColorParserForm.pdb
+E:\@@@2017 Dip of SD@@@\@Semester 2\@Dynamic Data Structures\s9\ColorParserForm\ColorParserForm\bin\Debug\Newtonsoft.Json.dll
+E:\@@@2017 Dip of SD@@@\@Semester 2\@Dynamic Data Structures\s9\ColorParserForm\ColorParserForm\bin\Debug\Newtonsoft.Json.xml
+E:\@@@2017 Dip of SD@@@\@Semester 2\@Dynamic Data Structures\s9\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.csprojResolveAssemblyReference.cache
+E:\@@@2017 Dip of SD@@@\@Semester 2\@Dynamic Data Structures\s9\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.Form1.resources
+E:\@@@2017 Dip of SD@@@\@Semester 2\@Dynamic Data Structures\s9\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.Properties.Resources.resources
+E:\@@@2017 Dip of SD@@@\@Semester 2\@Dynamic Data Structures\s9\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.csproj.GenerateResource.Cache
+E:\@@@2017 Dip of SD@@@\@Semester 2\@Dynamic Data Structures\s9\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.csproj.CoreCompileInputs.cache
+E:\@@@2017 Dip of SD@@@\@Semester 2\@Dynamic Data Structures\s9\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.exe
+E:\@@@2017 Dip of SD@@@\@Semester 2\@Dynamic Data Structures\s9\ColorParserForm\ColorParserForm\obj\Debug\ColorParserForm.pdb
