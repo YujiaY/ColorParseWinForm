@@ -36,18 +36,18 @@
             // 
             // btnJsonDictionary
             // 
-            this.btnJsonDictionary.Location = new System.Drawing.Point(157, 12);
+            this.btnJsonDictionary.Location = new System.Drawing.Point(16, 12);
             this.btnJsonDictionary.Name = "btnJsonDictionary";
-            this.btnJsonDictionary.Size = new System.Drawing.Size(132, 23);
+            this.btnJsonDictionary.Size = new System.Drawing.Size(294, 37);
             this.btnJsonDictionary.TabIndex = 0;
-            this.btnJsonDictionary.Text = "Read JSON (dictionary)";
+            this.btnJsonDictionary.Text = "Read JSON from File (dictionary)";
             this.btnJsonDictionary.UseVisualStyleBackColor = true;
             this.btnJsonDictionary.Click += new System.EventHandler(this.btnJsonDictionary_Click);
             // 
             // labelJsonString
             // 
             this.labelJsonString.AutoSize = true;
-            this.labelJsonString.Location = new System.Drawing.Point(13, 52);
+            this.labelJsonString.Location = new System.Drawing.Point(13, 61);
             this.labelJsonString.Name = "labelJsonString";
             this.labelJsonString.Size = new System.Drawing.Size(190, 13);
             this.labelJsonString.TabIndex = 1;
@@ -55,19 +55,18 @@
             // 
             // flowLayoutPanelColors
             // 
-            this.flowLayoutPanelColors.Location = new System.Drawing.Point(16, 79);
+            this.flowLayoutPanelColors.Location = new System.Drawing.Point(16, 116);
             this.flowLayoutPanelColors.Name = "flowLayoutPanelColors";
-            this.flowLayoutPanelColors.Size = new System.Drawing.Size(641, 494);
+            this.flowLayoutPanelColors.Size = new System.Drawing.Size(641, 457);
             this.flowLayoutPanelColors.TabIndex = 2;
- 
             // 
             // btnJsonClass
             // 
             this.btnJsonClass.Location = new System.Drawing.Point(346, 12);
             this.btnJsonClass.Name = "btnJsonClass";
-            this.btnJsonClass.Size = new System.Drawing.Size(143, 23);
+            this.btnJsonClass.Size = new System.Drawing.Size(311, 37);
             this.btnJsonClass.TabIndex = 3;
-            this.btnJsonClass.Text = "Read JSON (class)";
+            this.btnJsonClass.Text = "Read JSON from File (class) And Write to File";
             this.btnJsonClass.UseVisualStyleBackColor = true;
             this.btnJsonClass.Click += new System.EventHandler(this.btnJsonClass_Click);
             // 
