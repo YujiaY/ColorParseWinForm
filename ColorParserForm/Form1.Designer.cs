@@ -36,7 +36,7 @@
             // 
             // btnJsonDictionary
             // 
-            this.btnJsonDictionary.Location = new System.Drawing.Point(16, 12);
+            this.btnJsonDictionary.Location = new System.Drawing.Point(157, 12);
             this.btnJsonDictionary.Name = "btnJsonDictionary";
             this.btnJsonDictionary.Size = new System.Drawing.Size(132, 23);
             this.btnJsonDictionary.TabIndex = 0;
@@ -57,12 +57,13 @@
             // 
             this.flowLayoutPanelColors.Location = new System.Drawing.Point(16, 79);
             this.flowLayoutPanelColors.Name = "flowLayoutPanelColors";
-            this.flowLayoutPanelColors.Size = new System.Drawing.Size(355, 170);
+            this.flowLayoutPanelColors.Size = new System.Drawing.Size(641, 494);
             this.flowLayoutPanelColors.TabIndex = 2;
+ 
             // 
             // btnJsonClass
             // 
-            this.btnJsonClass.Location = new System.Drawing.Point(188, 12);
+            this.btnJsonClass.Location = new System.Drawing.Point(346, 12);
             this.btnJsonClass.Name = "btnJsonClass";
             this.btnJsonClass.Size = new System.Drawing.Size(143, 23);
             this.btnJsonClass.TabIndex = 3;
@@ -74,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 261);
+            this.ClientSize = new System.Drawing.Size(669, 585);
             this.Controls.Add(this.btnJsonClass);
             this.Controls.Add(this.flowLayoutPanelColors);
             this.Controls.Add(this.labelJsonString);

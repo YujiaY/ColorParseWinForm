@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using System.IO;
 
 /* Examples of how to parse Colours data into and out of JSON format.
- * Author: Ivone Bennett, NM Tafe, 31/8/2017
  */
 namespace ColorParserForm
 {
@@ -27,11 +27,43 @@ namespace ColorParserForm
             ColourParserDictionary cp = new ColourParserDictionary();
 
             // Set up some colours data (must be key-value pairs)
+
+            //Read clor setup from text file:
+            string jsonallfile = File.ReadAllText(@"..\\..\\..\\jsonColoursHex.txt");
+                        
+            IList<ColorRainbow> crs = JsonConvert.DeserializeObject<List<ColorRainbow>>(jsonallfile);
+
+
+            // Old method ,only usable for format like:
+            //  { "name":"aliceblue","hexcode":"#f0f8ff"}{ "name":"antiquewhite","hexcode":"#faebd7"}
+            /*
+             * 
+            IList<ColorRainbow> crs = new List<ColorRainbow>();
+            JsonTextReader reader = new JsonTextReader(new StringReader(jsonallfile));
+            reader.SupportMultipleContent = true;
+
+            while (true)
+            {
+                if (!reader.Read())
+                {
+                    break;
+                }
+
+                JsonSerializer serializer = new JsonSerializer();
+                ColorRainbow crtemp = serializer.Deserialize<ColorRainbow>(reader);
+
+                crs.Add(crtemp);
+            }
+            */
+            //End of old method
+
             Dictionary<string, string> colourPairs = new Dictionary<string, string>();
             //The built-in class System.Drawing.Color has heaps of pre-defined colours
-            colourPairs.Add("aliceblue", "#f0f8ff");
-            colourPairs.Add("antiquewhite", "#faebd7");
-            colourPairs.Add("brown", "#a52a2a");
+
+            foreach (var crb in crs)
+            {
+                colourPairs.Add(crb.name, crb.hexcode);
+            }
 
             // First, convert colours in Dictionary data structure to a Json string
             string output = cp.serializeColoursData(colourPairs);
@@ -40,8 +72,9 @@ namespace ColorParserForm
             // Next, convert the Json string back to a Dictionary object
             Dictionary<string, string> myColoursDic = cp.deserialiseColoursData(output);
             // Logging - writes to the debugger output window, not to a log file.
-            System.Diagnostics.Debug.WriteLine("aliceblue hex code is " + myColoursDic["aliceblue"]);
-            System.Diagnostics.Debug.WriteLine("antiquewhite hex code is " + myColoursDic["antiquewhite"]);
+
+           // System.Diagnostics.Debug.WriteLine("aliceblue hex code is " + myColoursDic["aliceblue"]);
+           // System.Diagnostics.Debug.WriteLine("antiquewhite hex code is " + myColoursDic["antiquewhite"]);
 
             // Dynamically display the colours on the screen
             foreach (var dic in colourPairs) // implicitly defined datatype for variable dic
@@ -59,37 +92,39 @@ namespace ColorParserForm
         // This example uses an array of class objects
         private void btnJsonClass_Click(object sender, EventArgs e)
         {
-            // set up colours data
-            ColorRainbow[] crArr = new ColorRainbow[3];
-            ColorRainbow cr = new ColorRainbow();
-            cr.name = "aliceblue";
-            cr.hexcode = "#f0f8ff";
-            crArr[0] = cr;
-            cr = new ColorRainbow();
-            cr.name = "antiquewhite";
-            cr.hexcode = "#faebd7";
-            crArr[1] = cr;
-            cr = new ColorRainbow();
-            cr.name = "brown";
-            cr.hexcode = "#a52a2a";
-            crArr[2] = cr;
+            //Read clor setup from text file:
+            string jsonallfile = File.ReadAllText(@"..\\..\\..\\jsonColoursHex.txt");
+
+            IList<ColorRainbow> crs = JsonConvert.DeserializeObject<List<ColorRainbow>>(jsonallfile);
+
+            //
+            //End of Another way part1
+            //
 
             // Convert to Json and back again
-            string output = JsonConvert.SerializeObject(crArr);
+            string output = JsonConvert.SerializeObject(crs);
             labelJsonString.Text = output;
 
-            ColorRainbow[] myColours = JsonConvert.DeserializeObject<ColorRainbow[]>(output);
+            //Output to file
+
+            System.IO.File.WriteAllText(@"..\..\..\jsonColoursHexOutput.txt", output);
 
             // Display colours in a Listbox on the screen
+
             ListBox lb = new ListBox();
-            foreach (var cra in crArr) // implicitly defined datatype for variable dic
+            foreach (var crb in crs) // implicitly defined datatype for variable dic
             {
-                System.Diagnostics.Debug.WriteLine("colour key is " + cra.name);
-                System.Diagnostics.Debug.WriteLine("colour hexcode is " + cra.hexcode);
-                lb.Items.Add(cra.name);
+                System.Diagnostics.Debug.WriteLine("Colour Name is " + crb.name);
+                System.Diagnostics.Debug.WriteLine("Colour Hexcode is " + crb.hexcode);
+                lb.Items.Add(crb.name);
             }
+            //
+            
+            //
             flowLayoutPanelColors.Controls.Add(lb);
         }
+
+        
 
         // Note: You can use JSONSerializer to write to and from text files.
     }

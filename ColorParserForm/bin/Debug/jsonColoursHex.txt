@@ -1,0 +1,12 @@
+{"Name":"aliceblue","Hexcode":"#f0f8ff"}
+{"Name":"antiquewhite","Hexcode":"#faebd7"}
+{"Name":"aqua","Hexcode":"#00ffff"}
+{"Name":"aquamarine","Hexcode":"#7fffd4"}
+{"Name":"azure","Hexcode":"#f0ffff"}
+{"Name":"beige","Hexcode":"#f5f5dc"}
+{"Name":"bisque","Hexcode":"#a52a2a"}
+{"Name":"black","Hexcode":"#000000"}
+{"Name":"blanchedalmond","Hexcode":"#ffebcd"}
+{"Name":"blue","Hexcode":"#0000ff"}
+{"Name":"blueviolet","Hexcode":"#8a2be2"}
+{"Name":"brown","Hexcode":"#a52a2a"}
